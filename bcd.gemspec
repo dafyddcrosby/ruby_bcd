@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = 'bcd'
-  gem.version = '0.2'
+  gem.version = '0.3'
   gem.summary       = %q{Binary Coded Decimal library}
   gem.description   = %q{A library for decoding and encoding binary coded decimal}
   gem.author = 'Dafydd Crosby'
