@@ -1,7 +1,7 @@
 # Methods to translate to and from binary coded decimal
 #
-# Author:: Dafydd Crosby <dafydd@dafyddcrosby.com>
-# Copyright:: Copyright 2013, Dafydd Crosby
+# Author:: David Crosby <dafydd@dafyddcrosby.com>
+# Copyright:: Copyright 2013, David Crosby
 # License:: BSD 2-clause
 
 module BCD
