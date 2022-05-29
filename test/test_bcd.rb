@@ -1,7 +1,8 @@
-require 'test/unit'
+require 'minitest/autorun'
+require 'minitest/pride'
 require 'bcd'
 
-class TestBCD < Test::Unit::TestCase
+class TestBCD < Minitest::Test
   def test_encode
     assert_equal 4, BCD.encode(4)
     assert_equal 22, BCD.encode(34)
