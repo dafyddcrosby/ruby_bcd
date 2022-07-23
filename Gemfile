@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 group :development, optional: true do
+  gem 'dc-rubocop'
   gem 'minitest'
   gem 'rake'
   gem 'rubocop'
