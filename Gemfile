@@ -3,5 +3,5 @@
 source "https://rubygems.org"
 
 group :development, optional: true do
-  gem "dc-devtools", "~> 0.3"
+  gem "dc-devtools", "~> 0.4"
 end
