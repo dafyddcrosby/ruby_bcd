@@ -9,14 +9,14 @@
 module BCD
   # Translates binary coded decimal into an integer
   def self.decode(bcd)
-    raise ArgumentError, 'Argument is not numeric' unless bcd.is_a? Numeric
-    raise ArgumentError, 'Cannot be a negative integer' if bcd.negative?
+    raise ArgumentError, "Argument is not numeric" unless bcd.is_a? Numeric
+    raise ArgumentError, "Cannot be a negative integer" if bcd.negative?
 
     binstring = String.new
     loop do
       q, r = bcd.divmod(10)
       nibble = r.to_s(2)
-      nibble.prepend('0') while nibble.length < 4
+      nibble.prepend("0") while nibble.length < 4
       binstring.prepend(nibble)
       q.zero? ? break : bcd = q
     end
@@ -26,8 +26,8 @@ module BCD
 
   # Translate an integer into binary coded decimal
   def self.encode(int)
-    raise ArgumentError, 'Argument is not numeric' unless int.is_a? Numeric
-    raise ArgumentError, 'Cannot be a negative integer' if int.negative?
+    raise ArgumentError, "Argument is not numeric" unless int.is_a? Numeric
+    raise ArgumentError, "Cannot be a negative integer" if int.negative?
 
     bcdstring = String.new
     while int.positive?
