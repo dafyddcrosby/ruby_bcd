@@ -1,4 +1,5 @@
 *.gem
-vendor
 .bundle
+/coverage/
 Gemfile.lock
+vendor
