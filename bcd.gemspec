@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require "English"
 Gem::Specification.new do |gem|
   gem.name = "bcd"
   gem.version = "1.0.5"

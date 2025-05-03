@@ -4,5 +4,3 @@ README.md
 Rakefile
 bcd.gemspec
 lib/bcd.rb
-test/test_bcd.rb
-test/test_helper.rb
