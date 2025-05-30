@@ -1,4 +1,4 @@
-MRuby::Gem::Specification.new('mruby-bcd') do |gem|
+MRuby::Gem::Specification.new('ruby_bcd') do |gem|
   gem.summary = "Binary Coded Decimal library"
   gem.authors = "David Crosby"
   gem.license = "BSD-2-Clause"
