@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# rbs_inline: enabled
+
 # Methods to translate to and from binary coded decimal
 #
 # Author:: David Crosby <dafydd@dafyddcrosby.com>
@@ -8,8 +10,9 @@
 
 module BCD
   # Translates binary coded decimal into an integer
+  # : (Integer) -> Integer
   def self.decode(bcd)
-    raise ArgumentError, "Argument is not numeric" unless bcd.is_a? Numeric
+    raise ArgumentError, "Argument is not Integer" unless bcd.is_a? Integer
     raise ArgumentError, "Cannot be a negative integer" if bcd.negative?
 
     binstring = String.new
@@ -25,8 +28,9 @@ module BCD
   end
 
   # Translate an integer into binary coded decimal
+  # : (Integer) -> Integer
   def self.encode(int)
-    raise ArgumentError, "Argument is not numeric" unless int.is_a? Numeric
+    raise ArgumentError, "Argument is not Integer" unless int.is_a? Integer
     raise ArgumentError, "Cannot be a negative integer" if int.negative?
 
     bcdstring = String.new

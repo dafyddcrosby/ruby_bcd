@@ -1,0 +1,11 @@
+# Generated from lib/bcd.rb with RBS::Inline
+
+module BCD
+  # Translates binary coded decimal into an integer
+  # : (Integer) -> Integer
+  def self.decode: (untyped bcd) -> untyped
+
+  # Translate an integer into binary coded decimal
+  # : (Integer) -> Integer
+  def self.encode: (untyped int) -> untyped
+end
