@@ -1,12 +1,17 @@
 # frozen_string_literal: true
 
 require "dc_rake"
-require "dc_typing/rake"
 require "rake/testtask"
 
 Rake::TestTask.new do |t|
   t.libs << "test"
 end
 
+default_tasks = %i[test rubocop]
+unless RUBY_VERSION.match?("3.[0-2]")
+  require "dc_typing/rake"
+  default_tasks.append("steep")
+end
+
 desc "Run tests"
-task default: %i[test rubocop steep]
+task default: default_tasks
