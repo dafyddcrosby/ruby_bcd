@@ -3,5 +3,5 @@
 # rbs_inline: enabled
 
 module BCD
-  VERSION = "1.0.8" #: String
+  VERSION = "1.0.9" #: String
 end
