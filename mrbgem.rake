@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative "lib/bcd/version"
 
 MRuby::Gem::Specification.new("ruby_bcd") do |gem|
