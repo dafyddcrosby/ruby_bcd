@@ -1,5 +1,5 @@
 # Generated from lib/bcd/version.rb with RBS::Inline
 
 module BCD
-  VERSION: String
+  VERSION: ::String
 end
